@@ -24,13 +24,13 @@
                class="toolbar-logo"
                rel="noopener"/>
         <v-btn flat
+               v-on:click="scrollTo('#flavour')"
+               class="hidden-sm-and-down"
+               rel="noopener">Getting Started</v-btn>
+        <v-btn flat
                v-on:click="scrollTo('#features')"
                class="hidden-sm-and-down"
                rel="noopener">Features</v-btn>
-        <v-btn flat
-               v-on:click="scrollTo('#getting-started')"
-               class="hidden-sm-and-down"
-               rel="noopener">Getting Started</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items>
@@ -63,8 +63,8 @@
       <mobileCover id="top">
         <heroText/>
       </mobileCover>
+      <flavour id="flavour" />
       <features id="features" />
-      <gettingStarted id="getting-started"/>
       <zFooter/>
 
     </parallaxfallback>
@@ -116,13 +116,9 @@
                      v-bind:zIndex=80
                      backgroundColor="#f8f8f8">
 
-        <heroText backgroundColor="#f8f8f8"
-                  color="#3ea5fd"
-                  v-bind:paddingBottom=100 />
-
-        <features id="features" />
+        <flavour id="flavour"/>
+        <features id="features"/>
         <technologies id="technologies"/>
-        <gettingStarted id="getting-started"/>
         <zFooter/>
 
       </parallaxCover>
@@ -159,7 +155,7 @@
   import mobileCover from './MobileCover'
   import heroText from './HeroText'
   import features from './Features'
-  import gettingStarted from './GettingStarted'
+  import flavour from './Flavour'
   import technologies from './Technologies'
   import zFooter from './ZFooter'
   import VueScrollTo from 'vue-scrollto'
@@ -172,9 +168,9 @@
       parallaxFallback,
       mobileCover,
       heroText,
+      flavour,
       features,
       technologies,
-      gettingStarted,
       zFooter
     },
     data () {

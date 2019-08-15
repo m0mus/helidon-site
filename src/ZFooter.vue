@@ -36,6 +36,5 @@
      :padding-bottom 0px
      :padding-left 10%
      :padding-right 10%
-     :border-top 1px solid white
      :font-size 0.9em
 </style>

@@ -2,86 +2,95 @@
   ~ Copyright (c) 2018, 2019 Oracle and/or its affiliates. All rights reserved.
 -->
 <template>
-  <v-container v-bind:id="id" fluid light class="slide_features">
+<v-container v-bind:id="id" fluid light class="slide_features">
     <h2>Features</h2>
     <v-layout row wrap class="feature">
-      <v-flex md2 class="hidden-sm-and-down"/>
-      <v-flex md4 xs12 >
-        <div class="section">
-          <div>
-            <h3><v-icon>import_contacts</v-icon>Simple and fast</h3>
-            <p>Helidon is designed to be simple to  use, with tooling and examples to get you going quickly. Since Helidon
-            is just a collection of libraries running on a fast Netty core, there is no extra overhead or bloat.</p>
-          </div>
-        </div>
-      </v-flex>
-      <v-flex md4 xs12 class="feature-graphic simple-and-fast-graphic "/>
-      <v-flex md2 class="hidden-sm-and-down"/>
+        <v-flex md2 class="hidden-sm-and-down" />
+        <v-flex md4 xs12>
+            <div class="section">
+                <div>
+                    <h3>
+                        <v-icon>import_contacts</v-icon>Simple and fast
+                    </h3>
+                    <p>Helidon is designed to be simple to use, with tooling and examples to get you going quickly. Since Helidon
+                        is just a collection of libraries running on a fast Netty core, there is no extra overhead or bloat.</p>
+                </div>
+            </div>
+        </v-flex>
+        <v-flex md4 xs12 class="feature-graphic simple-and-fast-graphic " />
+        <v-flex md2 class="hidden-sm-and-down" />
     </v-layout>
     <v-layout row wrap class="feature">
-      <v-flex md12 class="hidden-sm-and-down vertical-spacer"/>
-      <v-flex md2 class="hidden-sm-and-down"/>
-      <v-flex md4 xs12 class="feature-graphic microprofile-support-graphic hidden-sm-and-down"/>
-      <v-flex md4 xs12 >
-        <div class="section">
-          <div>
-            <h3><v-icon>border_clear</v-icon>MicroProfile Support</h3>
-            <p>Helidon supports MicroProfile and provides familiar APIs like JAX-RS, CDI and JSON-P/B. Our
-             MicroProfile implementation runs on our fast Helidon Reactive WebServer</p>
-          </div>
-        </div>
-      </v-flex>
-      <v-flex md2 class="hidden-sm-and-down"/>
-      <v-flex md4 xs12 class="feature-graphic microprofile-support-graphic hidden-md-and-up"/>
+        <v-flex md12 class="hidden-sm-and-down vertical-spacer" />
+        <v-flex md2 class="hidden-sm-and-down" />
+        <v-flex md4 xs12 class="feature-graphic microprofile-support-graphic hidden-sm-and-down" />
+        <v-flex md4 xs12>
+            <div class="section">
+                <div>
+                    <h3>
+                        <v-icon>border_clear</v-icon>MicroProfile Support
+                    </h3>
+                    <p>Helidon supports MicroProfile and provides familiar APIs like JAX-RS, CDI and JSON-P/B. Our
+                        MicroProfile implementation runs on our fast Helidon Reactive WebServer</p>
+                </div>
+            </div>
+        </v-flex>
+        <v-flex md2 class="hidden-sm-and-down" />
+        <v-flex md4 xs12 class="feature-graphic microprofile-support-graphic hidden-md-and-up" />
     </v-layout>
     <v-layout row wrap class="feature">
-      <v-flex md12 class="hidden-sm-and-down vertical-spacer"/>
-      <v-flex md2 class="hidden-sm-and-down"/>
-      <v-flex md4 xs12 >
-        <div class="section">
-          <div>
-            <h3><v-icon>storage</v-icon>Reactive WebServer</h3>
-            <p>Helidon Reactive WebServer provides a modern functional programming model and runs on top of Netty.
-            Lightweight, flexible and reactive, the Helidon WebServer provides a simple to use and fast foundation for
-            your microservices.</p>
-          </div>
-        </div>
-      </v-flex>
-      <v-flex md4 xs12 class="feature-graphic reactive-web-server-graphic"/>
-      <v-flex md2 class="hidden-sm-and-down"/>
+        <v-flex md12 class="hidden-sm-and-down vertical-spacer" />
+        <v-flex md2 class="hidden-sm-and-down" />
+        <v-flex md4 xs12>
+            <div class="section">
+                <div>
+                    <h3>
+                        <v-icon>storage</v-icon>Reactive WebServer
+                    </h3>
+                    <p>Helidon Reactive WebServer provides a modern functional programming model and runs on top of Netty.
+                        Lightweight, flexible and reactive, the Helidon WebServer provides a simple to use and fast foundation for
+                        your microservices.</p>
+                </div>
+            </div>
+        </v-flex>
+        <v-flex md4 xs12 class="feature-graphic reactive-web-server-graphic" />
+        <v-flex md2 class="hidden-sm-and-down" />
     </v-layout>
     <v-layout row wrap class="feature">
-      <v-flex md12 class="hidden-sm-and-down vertical-spacer"/>
-      <v-flex md2 class="hidden-sm-and-down"/>
-      <v-flex md4 xs12 class="feature-graphic observable-and-resilient-graphic hidden-sm-and-down"/>
-      <v-flex md4 xs12 >
-        <div class="section">
-          <div>
-            <h3><v-icon>repeat</v-icon>Observable and Resilient</h3>
-            <p>With support for health checks, metrics, tracing and fault tolerance, Helidon has what you need to
-             write cloud ready applications that integrate with Prometheus, Jaeger/Zipkin and Kubernetes.</p>
-          </div>
-        </div>
-      </v-flex>
-      <v-flex md4 xs12 class="feature-graphic observable-and-resilient-graphic hidden-md-and-up"/>
-      <v-flex md2 class="hidden-sm-and-down"/>
+        <v-flex md12 class="hidden-sm-and-down vertical-spacer" />
+        <v-flex md2 class="hidden-sm-and-down" />
+        <v-flex md4 xs12 class="feature-graphic observable-and-resilient-graphic hidden-sm-and-down" />
+        <v-flex md4 xs12>
+            <div class="section">
+                <div>
+                    <h3>
+                        <v-icon>repeat</v-icon>Observable and Resilient
+                    </h3>
+                    <p>With support for health checks, metrics, tracing and fault tolerance, Helidon has what you need to
+                        write cloud ready applications that integrate with Prometheus, Jaeger/Zipkin and Kubernetes.</p>
+                </div>
+            </div>
+        </v-flex>
+        <v-flex md4 xs12 class="feature-graphic observable-and-resilient-graphic hidden-md-and-up" />
+        <v-flex md2 class="hidden-sm-and-down" />
     </v-layout>
-  </v-container>
+</v-container>
 </template>
 <script>
-  export default {
-    props: {
-      id: {
-        type: String,
+export default {
+  props: {
+    id: {
+      type: String,
         required: true
-      }
     }
   }
+}
 </script>
 <style lang="sass">
   .slide_features
     :background-color #f8f8f8
-    :padding-top 100px
+    :padding-top 50px
+    :padding-bottom 50px
     .vertical-spacer
       :height 50px
     .section
@@ -100,13 +109,13 @@
           :margin-right 10px
           :color #3ea5fd
     .feature
-      :margin-bottom 100px
+      :margin-bottom 50px
     h2
       :color #3ea5fd
       :text-align center
       :font-weight 400
       :font-size 3em
-      :margin-bottom 100px
+      :margin-bottom 50px
     h3
       :font-weight 400
       :font-size 1.8em
@@ -118,7 +127,7 @@
         :color #3ea5fd !important
     p
       :color #3ea5fd
-      :font-size 1.25em
+      :font-size 1.5em
       :margin-left 10px
     .feature-graphic
       :margin-top auto;

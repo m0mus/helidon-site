@@ -113,15 +113,14 @@
         :color #595959
     a
       :text-decoration none
-      :font-size large
+      :font-size 1em
       :margin-bottom 16px
       :text-transform uppercase
       :font-weight 300
-      :text-shadow 1px 1px 1px #bdbdbd
     h2
       :color #3ea5fd
       :text-align center
       :font-weight 400
       :font-size 3em
-      :margin-bottom 84px
+      :margin-bottom 50px
 </style>
