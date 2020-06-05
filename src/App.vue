@@ -24,7 +24,7 @@
                class="toolbar-logo"
                rel="noopener"/>
         <v-btn flat
-               v-on:click="scrollTo('#features')"
+               v-on:click="scrollTo('#features2')"
                class="hidden-sm-and-down"
                rel="noopener">Features</v-btn>
         <v-btn flat
@@ -75,7 +75,8 @@
       <mobileCover id="top">
         <heroText/>
       </mobileCover>
-      <features id="features" />
+      <!--features id="features" /-->
+      <features2 id="features2" />
       <gettingStarted id="getting-started"/>
       <technologies id="technologies"/>
       <community id="community"/>
@@ -134,7 +135,8 @@
                   color="#3ea5fd"
                   v-bind:paddingBottom=100 />
 
-        <features id="features" />
+        <!--features id="features" /-->
+        <features2 id="features2" />
         <gettingStarted id="getting-started"/>
         <technologies id="technologies"/>
         <community id="community"/>
@@ -168,13 +170,17 @@
   import '../static/img/logo-zipkin-500x500.png'
   import '../static/img/unfurl_logo.png'
 
+  import '../static/img/graalvm_logo.svg'
+  import '../static/img/cli.png'
+
   import parallaxWrapper from './ParallaxWrapper'
   import parallaxLayer from './ParallaxLayer'
   import parallaxCover from './ParallaxCover'
   import parallaxFallback from './ParallaxFallback'
   import mobileCover from './MobileCover'
   import heroText from './HeroText'
-  import features from './Features'
+  // import features from './Features'
+  import features2 from './Features2'
   import gettingStarted from './GettingStarted'
   import technologies from './Technologies'
   import community from './Community'
@@ -189,7 +195,8 @@
       parallaxFallback,
       mobileCover,
       heroText,
-      features,
+      // features,
+      features2,
       technologies,
       gettingStarted,
       community,
